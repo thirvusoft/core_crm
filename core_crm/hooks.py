@@ -31,7 +31,8 @@ app_license = "MIT"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-# doctype_js = {"doctype" : "public/js/doctype.js"}
+doctype_js = {"Customer" : "patches/javascript/customer.js",
+			  "Supplier" : "patches/javascript/supplier.js"}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
@@ -57,7 +58,7 @@ app_license = "MIT"
 # ------------
 
 # before_install = "core_crm.install.before_install"
-# after_install = "core_crm.install.after_install"
+after_install = "core_crm.patches.python.custom_fields.custom_fields.execute"
 
 # Uninstallation
 # ------------
